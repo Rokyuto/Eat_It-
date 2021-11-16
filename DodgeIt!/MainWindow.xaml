@@ -1,0 +1,22 @@
+﻿<Window x:Class="EatIt_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EatIt_"
+        mc:Ignorable="d"
+        Title="EatIt!" WindowState="Maximized" >
+    <Canvas Name="GameArea" Focusable="True" Background="Gray" KeyDown="KeyIsDown" KeyUp="KeyIsUp">
+
+        <Rectangle Name="DebugDummyX" Width="150" Height="1" Fill="Purple" Canvas.Left="500" Canvas.Top="100"/>
+        <Rectangle Name="DebugDummyY" Width="1" Height="150" Fill="Purple" Canvas.Left="500" Canvas.Top="100"/>
+
+        <Label Name="GameScore" FontSize="50" FontWeight="ExtraBold" Content="0" Canvas.Left= "960" Canvas.Top="460" Width="100" Height="80" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+
+        <Image Name="PlayerCircle" Width="50" Height="50" Source="Assets/PlayerCircle.png" Stretch="Fill" Canvas.Top="475" Canvas.Left="985" />
+
+        <Label Name="TestLabel" FontSize="50" FontWeight="ExtraBold" Content="" Canvas.Left= "277" Canvas.Top="187" />
+        <Rectangle x:Name="SpaceBox" Width="60" Height="60" Fill="Blue" Canvas.Left="0" Canvas.Top="0"/>
+
+    </Canvas>
+</Window>
